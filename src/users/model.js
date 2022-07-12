@@ -30,9 +30,5 @@ User.init({
     paranoid: true
 });
 
-User.belongsTo(Model.Trainer, {
-    foreignKey: 'id',
-    target_key: 'trainerId',
-});
 
 module.exports = { User };

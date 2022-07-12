@@ -1,4 +1,4 @@
-version: '1.0'
+version: '3.8'
 services:
   db:
     image: mysql
@@ -11,7 +11,7 @@ services:
       - MYSQL_PASSWORD=nodeapp
       - MYSQL_ROOT_PASSWORD=root
     ports:
-      - '3312:3312'
+      - '3313:3313'
     volumes:
       - db:/var/lib/mysql
 volumes:

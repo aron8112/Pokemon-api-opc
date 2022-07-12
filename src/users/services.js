@@ -42,11 +42,9 @@ class UserServices {
     static async login(req, res) {
 
         const {
-            body: {
-                name,
-                password
-            },
+            body: { name, password },
         } = req;
+
         try {
             const userFound = await User.findOne({
                 where: {
