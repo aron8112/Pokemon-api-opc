@@ -1,0 +1,36 @@
+{
+  "name": "pokemon-api-opc",
+  "version": "1.0.0",
+  "description": "Nueva Api ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aron8112/pokemon-api-opc.git"
+  },
+  "keywords": [
+    "academy"
+  ],
+  "author": "Aron Siccardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aron8112/pokemon-api-opc/issues"
+  },
+  "homepage": "https://github.com/aron8112/pokemon-api-opc#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}

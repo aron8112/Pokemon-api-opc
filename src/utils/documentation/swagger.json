@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Pokemon Trainer API",
+        "description": "Este es el swagger para mantener la documentacion de la pokemon api",
+        "version": "1.0"
+    },
+    "components": {
+        "schemas": {
+            "users": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "gender": {
+                        "type": "string",
+                        "enum": [
+                            "M",
+                            "F"
+                        ],
+                        "required": true
+                    },
+                    "age": {
+                        "type": "integer",
+                        "minimun": 10,
+                        "required": true
+                    },
+                    "password": {
+                        "type": "string",
+                        "required": true,
+                        "minLength": 8,
+                        "pattern": "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-.,]).{8,}$/"
+                    },
+                    "region": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
+            }
+        }
+    }
+}
